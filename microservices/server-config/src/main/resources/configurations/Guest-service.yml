@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      username: med
+      password: med
+      host: localhost
+      port: 27017
+      database: guest
+      authentication-database: admin
+
+
+server:
+  port: 8070
