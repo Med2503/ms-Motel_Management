@@ -23,7 +23,7 @@ public record BookRequest(
         @NotBlank(message = "guest should be present")
         String guestId,
         @NotEmpty(message = "book a room is mandatory!")
-        List<BookedRoomRequest> rooms
+        List<RoomBookedRequest> rooms
 
 ) {
 }
