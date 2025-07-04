@@ -20,7 +20,7 @@ public class Room {
     @GeneratedValue
     private Integer id;
     private String description;
-    private double availablePlaces;
+    private double availableBeds;
     @Column(precision = 19,scale = 4)
     private BigDecimal price;
 

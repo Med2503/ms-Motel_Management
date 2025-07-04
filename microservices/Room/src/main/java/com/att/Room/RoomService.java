@@ -48,14 +48,14 @@ public class RoomService {
         for (int i = 0; i < roomsList.size(); i++) {
             var room = roomsList.get(i);
             var roomRequest = roomsRequest.get(i);
-            if (room.getAvailablePlaces() < roomRequest.places()) {
+            if (room.getAvailableBeds() < roomRequest.beds()) {
                 throw new RoomRequestException("no available places in selected room " + roomRequest.roomId());
             }
 
-            var newAvailablePlaces = room.getAvailablePlaces() - roomRequest.places();
-            room.setAvailablePlaces(newAvailablePlaces);
+            var newAvailableBeds = room.getAvailableBeds() - roomRequest.beds();
+            room.setAvailableBeds(newAvailableBeds);
             repository.save(room);
-            bookedRooms.add(mapper.toRoomBookedResponse(room, roomRequest.places()));
+            bookedRooms.add(mapper.toRoomBookedResponse(room, roomRequest.beds()));
 
 
         }

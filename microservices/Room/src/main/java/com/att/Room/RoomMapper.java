@@ -9,7 +9,7 @@ public class RoomMapper {
         return Room.builder()
                 .id(request.id())
                 .description(request.description())
-                .availablePlaces(request.availablePlaces())
+                .availableBeds(request.availableBeds())
                 .price(request.price())
                 .roomType(RoomType.builder()
                         .id(request.RoomTypeId())
@@ -31,7 +31,7 @@ public class RoomMapper {
         return new RoomResponse(
                 room.getId(),
                 room.getDescription(),
-                room.getAvailablePlaces(),
+                room.getAvailableBeds(),
                 room.getPrice(),
                 room.getRoomType().getId(),
                 room.getRoomType().getType(),

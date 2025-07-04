@@ -9,8 +9,8 @@ public record RoomRequest(
         Integer id,
         @NotNull(message = "room description is mandatory")
         String description,
-        @Positive(message = "availablePlaces should be positive")
-        double availablePlaces,
+        @Positive(message = "availableBeds should be positive")
+        double availableBeds,
         @Positive(message = "price should be positive")
         BigDecimal price,
         @NotNull(message = "RoomTypeId is mandatory")
