@@ -9,14 +9,14 @@
         <module name="server-config" />
         <module name="discovery-server" />
       </profile>
-      <profile name="Annotation profile for Book" enabled="true">
+      <profile name="Annotation profile for Room" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
-        <module name="payment" />
+        <module name="Invoice" />
         <module name="Room" />
         <module name="Book" />
         <module name="Guest" />
@@ -30,10 +30,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Book" options="-parameters" />
       <module name="Guest" options="-parameters" />
+      <module name="Invoice" options="-parameters" />
       <module name="Room" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
       <module name="eBook" options="-parameters" />
-      <module name="payment" options="-parameters" />
       <module name="server-config" options="-parameters" />
     </option>
   </component>

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Invoice-service
+
+server:
+  port: 8065
