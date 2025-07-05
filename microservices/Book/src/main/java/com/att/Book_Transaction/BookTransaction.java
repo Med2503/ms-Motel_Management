@@ -1,10 +1,8 @@
-package com.att.Booking;
+package com.att.Book_Transaction;
 
 import com.att.Book.Booking;
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.awt.print.Book;
 
 
 @AllArgsConstructor

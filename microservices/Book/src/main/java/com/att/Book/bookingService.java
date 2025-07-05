@@ -1,12 +1,17 @@
 package com.att.Book;
 
 
-import com.att.Booking.BookTransactionRequest;
-import com.att.Booking.BookTransactionService;
+import com.att.Book_Transaction.BookTransactionRequest;
+import com.att.Book_Transaction.BookTransactionService;
+import com.att.config.BookingBiLL;
 import com.att.config.BookingKafkaProducer;
+import com.att.exception.BookingNotFoundException;
 import com.att.exception.GuestNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class bookingService {
@@ -59,5 +64,20 @@ public class bookingService {
 
     }
 
+    public List<BookResponse> findAllBookings() {
+        return this.repository.findAll()
+                .stream()
+                .map(mapper::toBookResponse)
+                .collect(Collectors.toList());
+    }
+
+    public BookResponse findById(Integer bookingId) {
+        return this.repository
+                .findById(bookingId)
+                .map(mapper::toBookResponse)
+                .orElseThrow(() -> new BookingNotFoundException(String.format("cannot find booking with id", bookingId)));
+
+
+    }
 }
 

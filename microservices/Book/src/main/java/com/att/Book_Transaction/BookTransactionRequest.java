@@ -1,4 +1,4 @@
-package com.att.Booking;
+package com.att.Book_Transaction;
 
 public record BookTransactionRequest(
         Integer id,

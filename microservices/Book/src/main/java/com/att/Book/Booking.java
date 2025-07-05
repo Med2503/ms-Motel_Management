@@ -1,7 +1,7 @@
 package com.att.Book;
 
 
-import com.att.Booking.BookTransaction;
+import com.att.Book_Transaction.BookTransaction;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
