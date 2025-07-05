@@ -23,5 +23,4 @@ server:
     application:
       config:
         guest-url: http://localhost:8777/api/v1/guests
-        payment-url: http://localhost:8777/api/v1/payments
         room-url: http://localhost:8777/api/v1/rooms

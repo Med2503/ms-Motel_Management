@@ -1,0 +1,25 @@
+server:
+  port: 8777
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: guest-service
+          uri: lb:http://GUEST-SERVICE
+          predicates:
+            - Path=/api/v1/guests/**
+        - id: book-service
+          uri: lb:http://Book-SERVICE
+          predicates:
+            - Path=/api/v1/bookings/**
+        - id: booking-transaction-service
+          uri: lb:http://Book-SERVICE
+          predicates:
+            - Path=/api/v1/booking-transaction/**
+        - id: room-service
+          uri: lb:http://Room-service
+          predicates:
+            - Path=/api/v1/rooms/**
