@@ -16,7 +16,7 @@
     <artifactId>server-config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>server-config</name>
-    <description>Demo project for Spring Boot</description>
+    <description>server-config</description>
     <url/>
     <licenses>
         <license/>

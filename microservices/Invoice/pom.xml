@@ -11,8 +11,8 @@
 	<groupId>com.example</groupId>
 	<artifactId>Invoice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Invoice</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Invoice-service</name>
+	<description>Invoice-service</description>
 	<url/>
 	<licenses>
 		<license/>
