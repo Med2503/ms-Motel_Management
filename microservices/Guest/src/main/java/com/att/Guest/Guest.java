@@ -15,13 +15,7 @@ public class Guest {
     private String email;
     private Location location;
 
-    public Guest(String id, String firstname, String lastname, String email, Location location) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.location = location;
-    }
+
 
     public String getId() {
         return id;

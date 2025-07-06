@@ -4,23 +4,19 @@ package com.att.Guest;
 import com.att.Guest.exception.GuestNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-
+@RequiredArgsConstructor
 public class GuestService {
 
     private final GuestRepository repository;
     private final GuestMapper mapper;
 
-    public GuestService(GuestRepository repository, GuestMapper mapper) {
-        this.repository = repository;
-        this.mapper = mapper;
-    }
+
 
     public String createGuest(GuestRequest request) {
         var guest = this.repository.save(mapper.toGuest(request));

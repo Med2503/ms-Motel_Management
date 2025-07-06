@@ -1,4 +1,4 @@
-package com.example.Gateway;
+package com.att.Gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
