@@ -66,5 +66,5 @@ This application is split into **7 independent microservices** communicating  vi
 1. **Clone the repository**
 
 ```bash
-[git clone https://github.com/your-username/motel-management-system.git](https://github.com/Med2503/ms-Motel_Management.git)
+[git clone https://github.com/Med2503/ms-Motel_Management.git ]
 cd motel-management-system
