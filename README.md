@@ -8,7 +8,7 @@ A modular **motel management platform** built using **Spring Boot**, **Kafka**, 
 
 ## 📌 Overview
 
-This application is split into **7 independent microservices** communicating asynchronously via **Apache Kafka**, using both **MongoDB** and **PostgreSQL** for persistence, and leveraging Spring Cloud components for service discovery, configuration, and routing.
+This application is split into **7 independent microservices** communicating  via **Apache Kafka** /**Feign Client**/**RestTemplate**, using both **MongoDB** and **PostgreSQL** for persistence, and leveraging Spring Cloud components for service discovery, configuration, and routing.
 
 ---
 
